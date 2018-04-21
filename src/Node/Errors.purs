@@ -16,6 +16,6 @@ instance nodeErrorError :: NodeError Error where
     code = defaultCode
     stack = defaultStack
 
-foreign import stackTraceLimit :: Int
+foreign import stackTraceLimit :: Effect Int
 
 foreign import setStackTraceLimit :: Int -> Effect Unit

@@ -1,6 +1,8 @@
 "use strict";
 
-exports.stackTraceLimit = Error.stackTraceLimit
+exports.stackTraceLimit = function () {
+    return Error.stackTraceLimit
+}
 
 exports.setStackTraceLimit = function (limit) {
     return function () {
