@@ -1,0 +1,8 @@
+{
+  "name": "purescript-idiomatic-node-errors",
+  "set": "master",
+  "source": "https://github.com/bklaric/package-sets.git",
+  "depends": [
+    "error"
+  ]
+}
