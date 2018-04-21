@@ -1,5 +1,8 @@
 module Errors where
 
+import Prelude
+
+import Effect (Effect)
 import Error.Class (class Error, defaultMessage, defaultName)
 import Node.Errors.Class (class NodeError, defaultCode, defaultStack)
 
@@ -12,3 +15,7 @@ instance errorError :: Error Error where
 instance nodeErrorError :: NodeError Error where
     code = defaultCode
     stack = defaultStack
+
+foreign import stackTraceLimit :: Int
+
+foreign import setStackTraceLimit :: Int -> Effect Unit
