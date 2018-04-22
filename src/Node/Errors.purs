@@ -1,4 +1,4 @@
-module Errors where
+module Node.Errors where
 
 import Prelude
 
